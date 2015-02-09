@@ -1,14 +1,19 @@
-require 'weather.rb'
+require 'weather'
 
 describe Weather do
 
-  it 'can be sunny' do
+  it 'should be sunny' do
     expect{weather(sunny)}
   end
 
-  it 'can be stormy' do
+  it 'should be stormy' do
     expect{weather(stormy)}
+  end
+
+  it 'should be stormy on demand' do
+    expect{stormy = true}
   end
 
 
 end
+

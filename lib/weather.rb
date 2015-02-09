@@ -1,15 +1,11 @@
 class Weather
 
-  def initialize
+  def weather
+    @forecast=["sunny", "sunny", "sunny", "stormy"].shuffle.pop
   end
 
-  def sunny
-    return sunny
-  end
-
-  def stormy
-    return stormy
-  end
-
+  def stormy?
+    @stormy = true
+end
 
 end
