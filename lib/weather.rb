@@ -1,11 +1,10 @@
-class Weather
+module Weather
 
-  def weather
-    @forecast=["sunny", "sunny", "sunny", "stormy"].shuffle.pop
+attr_reader :weather
+
+  def stormy
+    rand(1) < 0.2 ? true : false
   end
 
-  def stormy?
-    @stormy = true
-end
 
 end
