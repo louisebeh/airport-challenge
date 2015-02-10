@@ -8,7 +8,7 @@ class Plane
     @flying = false
   end
 
-  def takeoff
+  def take_off
     @flying = true
   end
 
