@@ -1,5 +1,9 @@
 class Plane
 
+  def initialize
+    @flying = false
+  end
+
   def flying?
     @flying
   end
@@ -13,7 +17,7 @@ class Plane
   end
 
   def status
-    @flying == true ? "flying" : "landed"
+    @flying ? "flying" : "landed"
   end
 
 

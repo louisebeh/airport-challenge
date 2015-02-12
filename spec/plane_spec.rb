@@ -22,7 +22,7 @@ describe Plane do
     it 'should change status after take off' do
       plane.take_off
       expect(plane.status).to eq "flying"
-      end
+    end
 
     it 'should change status when landed' do
       plane.land
